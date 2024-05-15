@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta content="text/html; charset=UTF-8" name="Content-Type" />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>SauravDhakal | Personal Portfolio</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script>
+    const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage));
+    if (isDarkMode()) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+
+    document.getElementById("toggleDarkMode").addEventListener("click", () => {
+      alert(1)
+      const isDarkMode = () => localStorage.theme === 'dark' || (!('theme' in localStorage));
+      if (isDarkMode()) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+
+    })
+  </script>
+
+  <style>
+    ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 20px;
+    }
+  </style>
+</head>
+
+<body>
+</body>
+{% block content %}
+{% endblock content %}
+
+</html>

@@ -1,0 +1,34 @@
+{% extends '_base.html' %}
+{% block content %}
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/skills">Skills</a></li>
+    <li><a href="/projects">Projects</a></li>
+  </ul>
+</nav>
+<hr>
+
+<div>
+  <header style="margin: 0 0 40px 0;">
+    <h1>Projects</h1>
+  </header>
+
+  <div style="margin-bottom: 40px; border-bottom: 2px solid white;">
+    <h2>Scheduler</h2>
+    <div class="project-content">
+      <p>An android and web based app that lets students get notices from their institutes with ease.</p>
+      <p>Build using flutter and firebase</p>
+    </div>
+  </div>
+
+  <div style="margin-bottom: 40px; border-bottom: 2px solid white;">
+    <h2>Nepse API</h2>
+    <div class="project-content">
+      <p>Access NepseAPI for free in your application.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

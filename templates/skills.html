@@ -1,0 +1,31 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<div>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/skills">Skills</a></li>
+      <li><a href="/projects">Projects</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <header>
+    <h1>Skils</h1>
+  </header>
+  <p>{{skills.info}}</p>
+  <div>
+    <ol>
+      {% for i in skills.all_skills %}
+        <li>{{ i }}</li>
+      {% endfor %}
+    </ol>
+  </div>
+</div>
+
+</body>
+
+</html>
+
+{% endblock %}
